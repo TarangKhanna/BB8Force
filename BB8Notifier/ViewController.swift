@@ -163,6 +163,7 @@ class ViewController: UIViewController , WCSessionDelegate {
             } else {
                 self.robot = RKConvenienceRobot(robot: noteRobot);
                 
+                
                 connectionLabel.text = noteRobot.name()
                 //                togleLED()
             }
