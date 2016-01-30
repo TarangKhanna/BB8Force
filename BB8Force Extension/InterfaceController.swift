@@ -17,7 +17,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        motionManager.accelerometerUpdateInterval = 0.1
+//        motionManager.accelerometerUpdateInterval = 0.1
         // Configure interface objects here.
     }
     
@@ -30,6 +30,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
         }
         super.willActivate()
         if (motionManager.accelerometerAvailable == true) {
+            motionManager.accelerometerUpdateInterval = 0.6
             motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.currentQueue()!, withHandler: { (data, error) -> Void in
                 guard let data = data else { return }
                 let accelerationX = data.acceleration.x
