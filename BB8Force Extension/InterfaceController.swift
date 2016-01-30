@@ -39,27 +39,17 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
                 print("y = \(accelerationY)")
                 let accelerationZ = data.acceleration.z
                 print("z = \(accelerationZ)")
-//                let object = [accelerationX, accelerationY, accelerationZ]
-                //                let dictionary = NSDictionary(dictionary: [object] as NSObject as! [NSObject : AnyObject])
-                //                print(dictionary)
-                // send)
                 // cannot move in y
                 var totalacc = String(accelerationX) + " " + String(accelerationY)
                 let messageToSend = ["Acceleration": totalacc]
                 dispatch_async(dispatch_get_main_queue()) {
                     self.session.sendMessage(messageToSend, replyHandler: {(_: [String : AnyObject]) -> Void in
-//                        print("here")
                         // handle reply from iPhone app here
                         }, errorHandler: {(error ) -> Void in
                             // catch any errors here
                             print(error)
                     })
                 }
-                
-                
-                
-                //                sleep(1)
-                // do you want to want to do with the data
             })
         }
         
