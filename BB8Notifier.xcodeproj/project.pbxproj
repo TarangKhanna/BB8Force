@@ -14,8 +14,58 @@
 		712EB9751C5C4B4600C20598 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712EB96F1C5C4B4600C20598 /* Images.xcassets */; };
 		712EB9761C5C4B4600C20598 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 712EB9701C5C4B4600C20598 /* Info.plist */; };
 		712EB9771C5C4B4600C20598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EB9711C5C4B4600C20598 /* ViewController.swift */; };
+		7151AA341C5C85D900E600E4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7151AA321C5C85D900E600E4 /* Interface.storyboard */; };
+		7151AA361C5C85D900E600E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7151AA351C5C85D900E600E4 /* Assets.xcassets */; };
+		7151AA3D1C5C85D900E600E4 /* BB8Force Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7151AA3C1C5C85D900E600E4 /* BB8Force Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7151AA441C5C85D900E600E4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151AA431C5C85D900E600E4 /* InterfaceController.swift */; };
+		7151AA461C5C85D900E600E4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151AA451C5C85D900E600E4 /* ExtensionDelegate.swift */; };
+		7151AA481C5C85D900E600E4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7151AA471C5C85D900E600E4 /* NotificationController.swift */; };
+		7151AA4A1C5C85D900E600E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7151AA491C5C85D900E600E4 /* Assets.xcassets */; };
+		7151AA4E1C5C85D900E600E4 /* BB8Force.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7151AA301C5C85D900E600E4 /* BB8Force.app */; };
 		EA8614BD1A2683DA004022C1 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8614BC1A2683DA004022C1 /* RobotKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7151AA3E1C5C85D900E600E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5C223E1A1E9078001F5117 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7151AA3B1C5C85D900E600E4;
+			remoteInfo = "BB8Force Extension";
+		};
+		7151AA4C1C5C85D900E600E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5C223E1A1E9078001F5117 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7151AA2F1C5C85D900E600E4;
+			remoteInfo = BB8Force;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7151AA541C5C85DA00E600E4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7151AA3D1C5C85D900E600E4 /* BB8Force Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7151AA561C5C85DA00E600E4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7151AA4E1C5C85D900E600E4 /* BB8Force.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		712EB9661C5C4AF300C20598 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -26,11 +76,29 @@
 		712EB96F1C5C4B4600C20598 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		712EB9701C5C4B4600C20598 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		712EB9711C5C4B4600C20598 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7151AA301C5C85D900E600E4 /* BB8Force.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BB8Force.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7151AA331C5C85D900E600E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7151AA351C5C85D900E600E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7151AA371C5C85D900E600E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7151AA3C1C5C85D900E600E4 /* BB8Force Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BB8Force Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7151AA421C5C85D900E600E4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		7151AA431C5C85D900E600E4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7151AA451C5C85D900E600E4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7151AA471C5C85D900E600E4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7151AA491C5C85D900E600E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7151AA4B1C5C85D900E600E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA5C22461A1E9078001F5117 /* BB8Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BB8Notifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8614BC1A2683DA004022C1 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../_Frameworks_iOS/RobotKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7151AA391C5C85D900E600E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA5C22431A1E9078001F5117 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,11 +124,44 @@
 			path = BB8Notifier;
 			sourceTree = "<group>";
 		};
+		7151AA311C5C85D900E600E4 /* BB8Force */ = {
+			isa = PBXGroup;
+			children = (
+				7151AA321C5C85D900E600E4 /* Interface.storyboard */,
+				7151AA351C5C85D900E600E4 /* Assets.xcassets */,
+				7151AA371C5C85D900E600E4 /* Info.plist */,
+			);
+			path = BB8Force;
+			sourceTree = "<group>";
+		};
+		7151AA401C5C85D900E600E4 /* BB8Force Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7151AA431C5C85D900E600E4 /* InterfaceController.swift */,
+				7151AA451C5C85D900E600E4 /* ExtensionDelegate.swift */,
+				7151AA471C5C85D900E600E4 /* NotificationController.swift */,
+				7151AA491C5C85D900E600E4 /* Assets.xcassets */,
+				7151AA4B1C5C85D900E600E4 /* Info.plist */,
+				7151AA411C5C85D900E600E4 /* Supporting Files */,
+			);
+			path = "BB8Force Extension";
+			sourceTree = "<group>";
+		};
+		7151AA411C5C85D900E600E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7151AA421C5C85D900E600E4 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		EA5C223D1A1E9078001F5117 = {
 			isa = PBXGroup;
 			children = (
 				712EB9661C5C4AF300C20598 /* Default-568h@2x.png */,
 				712EB9681C5C4B4600C20598 /* BB8Notifier */,
+				7151AA311C5C85D900E600E4 /* BB8Force */,
+				7151AA401C5C85D900E600E4 /* BB8Force Extension */,
 				EA5C226D1A1E913C001F5117 /* Frameworks */,
 				EA5C22471A1E9078001F5117 /* Products */,
 			);
@@ -70,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				EA5C22461A1E9078001F5117 /* BB8Notifier.app */,
+				7151AA301C5C85D900E600E4 /* BB8Force.app */,
+				7151AA3C1C5C85D900E600E4 /* BB8Force Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +188,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7151AA2F1C5C85D900E600E4 /* BB8Force */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7151AA551C5C85DA00E600E4 /* Build configuration list for PBXNativeTarget "BB8Force" */;
+			buildPhases = (
+				7151AA2E1C5C85D900E600E4 /* Resources */,
+				7151AA541C5C85DA00E600E4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7151AA3F1C5C85D900E600E4 /* PBXTargetDependency */,
+			);
+			name = BB8Force;
+			productName = BB8Force;
+			productReference = 7151AA301C5C85D900E600E4 /* BB8Force.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7151AA3B1C5C85D900E600E4 /* BB8Force Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7151AA531C5C85DA00E600E4 /* Build configuration list for PBXNativeTarget "BB8Force Extension" */;
+			buildPhases = (
+				7151AA381C5C85D900E600E4 /* Sources */,
+				7151AA391C5C85D900E600E4 /* Frameworks */,
+				7151AA3A1C5C85D900E600E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BB8Force Extension";
+			productName = "BB8Force Extension";
+			productReference = 7151AA3C1C5C85D900E600E4 /* BB8Force Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		EA5C22451A1E9078001F5117 /* BB8Notifier */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA5C22651A1E9078001F5117 /* Build configuration list for PBXNativeTarget "BB8Notifier" */;
@@ -92,10 +229,12 @@
 				EA5C22421A1E9078001F5117 /* Sources */,
 				EA5C22431A1E9078001F5117 /* Frameworks */,
 				EA5C22441A1E9078001F5117 /* Resources */,
+				7151AA561C5C85DA00E600E4 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7151AA4D1C5C85D900E600E4 /* PBXTargetDependency */,
 			);
 			name = BB8Notifier;
 			productName = HelloWorldSwift;
@@ -112,6 +251,14 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = orbotix;
 				TargetAttributes = {
+					7151AA2F1C5C85D900E600E4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7A9LG5LNH6;
+					};
+					7151AA3B1C5C85D900E600E4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7A9LG5LNH6;
+					};
 					EA5C22451A1E9078001F5117 = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = 7A9LG5LNH6;
@@ -137,11 +284,30 @@
 			projectRoot = "";
 			targets = (
 				EA5C22451A1E9078001F5117 /* BB8Notifier */,
+				7151AA2F1C5C85D900E600E4 /* BB8Force */,
+				7151AA3B1C5C85D900E600E4 /* BB8Force Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7151AA2E1C5C85D900E600E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7151AA361C5C85D900E600E4 /* Assets.xcassets in Resources */,
+				7151AA341C5C85D900E600E4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7151AA3A1C5C85D900E600E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7151AA4A1C5C85D900E600E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA5C22441A1E9078001F5117 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,6 +323,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7151AA381C5C85D900E600E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7151AA481C5C85D900E600E4 /* NotificationController.swift in Sources */,
+				7151AA461C5C85D900E600E4 /* ExtensionDelegate.swift in Sources */,
+				7151AA441C5C85D900E600E4 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA5C22421A1E9078001F5117 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,6 +343,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7151AA3F1C5C85D900E600E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7151AA3B1C5C85D900E600E4 /* BB8Force Extension */;
+			targetProxy = 7151AA3E1C5C85D900E600E4 /* PBXContainerItemProxy */;
+		};
+		7151AA4D1C5C85D900E600E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7151AA2F1C5C85D900E600E4 /* BB8Force */;
+			targetProxy = 7151AA4C1C5C85D900E600E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		712EB96A1C5C4B4600C20598 /* LaunchScreen.xib */ = {
@@ -185,9 +374,91 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
+		7151AA321C5C85D900E600E4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7151AA331C5C85D900E600E4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7151AA4F1C5C85DA00E600E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = BB8Force_Extension;
+				INFOPLIST_FILE = BB8Force/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = THacked96.bb8Notifier.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		7151AA501C5C85DA00E600E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = BB8Force_Extension;
+				INFOPLIST_FILE = BB8Force/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = THacked96.bb8Notifier.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		7151AA511C5C85DA00E600E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "BB8Force Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = THacked96.bb8Notifier.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		7151AA521C5C85DA00E600E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "BB8Force Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = THacked96.bb8Notifier.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 		EA5C22631A1E9078001F5117 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -316,6 +587,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7151AA531C5C85DA00E600E4 /* Build configuration list for PBXNativeTarget "BB8Force Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7151AA511C5C85DA00E600E4 /* Debug */,
+				7151AA521C5C85DA00E600E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7151AA551C5C85DA00E600E4 /* Build configuration list for PBXNativeTarget "BB8Force" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7151AA4F1C5C85DA00E600E4 /* Debug */,
+				7151AA501C5C85DA00E600E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EA5C22411A1E9078001F5117 /* Build configuration list for PBXProject "BB8Notifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -49,6 +49,12 @@
                                     <action selector="testStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x0c-vY-F1c"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhZ-dl-5ME">
+                                <rect key="frame" x="0.0" y="70" width="600" height="190"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -60,10 +66,12 @@
                     </view>
                     <connections>
                         <outlet property="connectionLabel" destination="xrb-fO-WDX" id="QMi-P5-qz8"/>
+                        <outlet property="outputLabel" destination="UhZ-dl-5ME" id="cTU-sd-yuA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="325" y="399"/>
         </scene>
     </scenes>
 </document>

@@ -7,20 +7,46 @@
 //
 
 import UIKit
+import WatchConnectivity
 
-class ViewController: UIViewController {
+@available(iOS 9.0, *)
+class ViewController: UIViewController , WCSessionDelegate {
+    
+    var session: WCSession!
     var robot: RKConvenienceRobot!
     var ledON = false
+    
+    
+    @IBOutlet weak var outputLabel: UILabel!
     
     @IBOutlet var connectionLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        if (WCSession.isSupported()) {
+            session = WCSession.defaultSession()
+            session.delegate = self;
+            session.activateSession()
+        }
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "appWillResignActive:", name: UIApplicationWillResignActiveNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "appDidBecomeActive:", name: UIApplicationDidBecomeActiveNotification, object: nil)
         
         RKRobotDiscoveryAgent.sharedAgent().addNotificationObserver(self, selector: "handleRobotStateChangeNotification:")
+    }
+    
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        print("RECEIVED2!!!")
+        
+        //handle received message
+        let value = message["Acceleration"] as? String
+        outputLabel.text = value
+        dispatch_async(dispatch_get_main_queue()) {
+//            self.messageLabel.text = value
+            print(value)
+            print("RECEIVED!!!")
+        }
+        //send a reply
+//        replyHandler(["Value":"Hello Watch"])
     }
     
     @IBAction func testStop(sender: AnyObject) {
