@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		712EB9671C5C4AF300C20598 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 712EB9661C5C4AF300C20598 /* Default-568h@2x.png */; };
+		712EB9721C5C4B4600C20598 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EB9691C5C4B4600C20598 /* AppDelegate.swift */; };
+		712EB9731C5C4B4600C20598 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 712EB96A1C5C4B4600C20598 /* LaunchScreen.xib */; };
+		712EB9741C5C4B4600C20598 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 712EB96C1C5C4B4600C20598 /* Main.storyboard */; };
+		712EB9751C5C4B4600C20598 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 712EB96F1C5C4B4600C20598 /* Images.xcassets */; };
+		712EB9761C5C4B4600C20598 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 712EB9701C5C4B4600C20598 /* Info.plist */; };
+		712EB9771C5C4B4600C20598 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712EB9711C5C4B4600C20598 /* ViewController.swift */; };
+		EA8614BD1A2683DA004022C1 /* RobotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8614BC1A2683DA004022C1 /* RobotKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		712EB9661C5C4AF300C20598 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		712EB9691C5C4B4600C20598 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		712EB96B1C5C4B4600C20598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		712EB96D1C5C4B4600C20598 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		712EB96E1C5C4B4600C20598 /* BB8Notifier-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BB8Notifier-Bridging-Header.h"; sourceTree = "<group>"; };
+		712EB96F1C5C4B4600C20598 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		712EB9701C5C4B4600C20598 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		712EB9711C5C4B4600C20598 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA5C22461A1E9078001F5117 /* BB8Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BB8Notifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8614BC1A2683DA004022C1 /* RobotKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RobotKit.framework; path = ../_Frameworks_iOS/RobotKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA5C22431A1E9078001F5117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA8614BD1A2683DA004022C1 /* RobotKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		712EB9681C5C4B4600C20598 /* BB8Notifier */ = {
+			isa = PBXGroup;
+			children = (
+				712EB9711C5C4B4600C20598 /* ViewController.swift */,
+				712EB9691C5C4B4600C20598 /* AppDelegate.swift */,
+				712EB96A1C5C4B4600C20598 /* LaunchScreen.xib */,
+				712EB96C1C5C4B4600C20598 /* Main.storyboard */,
+				712EB96E1C5C4B4600C20598 /* BB8Notifier-Bridging-Header.h */,
+				712EB96F1C5C4B4600C20598 /* Images.xcassets */,
+				712EB9701C5C4B4600C20598 /* Info.plist */,
+			);
+			path = BB8Notifier;
+			sourceTree = "<group>";
+		};
+		EA5C223D1A1E9078001F5117 = {
+			isa = PBXGroup;
+			children = (
+				712EB9661C5C4AF300C20598 /* Default-568h@2x.png */,
+				712EB9681C5C4B4600C20598 /* BB8Notifier */,
+				EA5C226D1A1E913C001F5117 /* Frameworks */,
+				EA5C22471A1E9078001F5117 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA5C22471A1E9078001F5117 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA5C22461A1E9078001F5117 /* BB8Notifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA5C226D1A1E913C001F5117 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA8614BC1A2683DA004022C1 /* RobotKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA5C22451A1E9078001F5117 /* BB8Notifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5C22651A1E9078001F5117 /* Build configuration list for PBXNativeTarget "BB8Notifier" */;
+			buildPhases = (
+				EA5C22421A1E9078001F5117 /* Sources */,
+				EA5C22431A1E9078001F5117 /* Frameworks */,
+				EA5C22441A1E9078001F5117 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BB8Notifier;
+			productName = HelloWorldSwift;
+			productReference = EA5C22461A1E9078001F5117 /* BB8Notifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA5C223E1A1E9078001F5117 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = orbotix;
+				TargetAttributes = {
+					EA5C22451A1E9078001F5117 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 7A9LG5LNH6;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = EA5C22411A1E9078001F5117 /* Build configuration list for PBXProject "BB8Notifier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA5C223D1A1E9078001F5117;
+			productRefGroup = EA5C22471A1E9078001F5117 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA5C22451A1E9078001F5117 /* BB8Notifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA5C22441A1E9078001F5117 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712EB9741C5C4B4600C20598 /* Main.storyboard in Resources */,
+				712EB9751C5C4B4600C20598 /* Images.xcassets in Resources */,
+				712EB9731C5C4B4600C20598 /* LaunchScreen.xib in Resources */,
+				712EB9761C5C4B4600C20598 /* Info.plist in Resources */,
+				712EB9671C5C4AF300C20598 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA5C22421A1E9078001F5117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				712EB9771C5C4B4600C20598 /* ViewController.swift in Sources */,
+				712EB9721C5C4B4600C20598 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		712EB96A1C5C4B4600C20598 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				712EB96B1C5C4B4600C20598 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		712EB96C1C5C4B4600C20598 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				712EB96D1C5C4B4600C20598 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA5C22631A1E9078001F5117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA5C22641A1E9078001F5117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../../frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA5C22661A1E9078001F5117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/BB8Notifier/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = THacked96.bb8Notifier;
+				PRODUCT_NAME = BB8Notifier;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BB8Notifier/BB8Notifier-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA5C22671A1E9078001F5117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/BB8Notifier/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = THacked96.bb8Notifier;
+				PRODUCT_NAME = BB8Notifier;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BB8Notifier/BB8Notifier-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA5C22411A1E9078001F5117 /* Build configuration list for PBXProject "BB8Notifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5C22631A1E9078001F5117 /* Debug */,
+				EA5C22641A1E9078001F5117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5C22651A1E9078001F5117 /* Build configuration list for PBXNativeTarget "BB8Notifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5C22661A1E9078001F5117 /* Debug */,
+				EA5C22671A1E9078001F5117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA5C223E1A1E9078001F5117 /* Project object */;
+}
