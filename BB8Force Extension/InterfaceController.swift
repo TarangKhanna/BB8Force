@@ -43,7 +43,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate{
                 //                print(dictionary)
                 // send)
                 // cannot move in y
-                var totalacc = String(accelerationX) + " " + String(accelerationY) + " " + String(accelerationZ)
+                var totalacc = String(accelerationX) + " " + String(accelerationY)
                 let messageToSend = ["Acceleration": totalacc]
                 dispatch_async(dispatch_get_main_queue()) {
                     self.session.sendMessage(messageToSend, replyHandler: {(_: [String : AnyObject]) -> Void in
