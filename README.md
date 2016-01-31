@@ -1,6 +1,9 @@
 # BB8Notifier
 
-Hackathon project
+Purdue Computing Showcase first prize winner. 
+http://devpost.com/software/bb8notifier
+
+What does it do?
 
 A native iOS app that wirelessly controls the bb8 using sensors on the watch and iphone device to control the bb8 with "The Force". Yes you can now download the force. We use the sphero sdk along with sensor data from the ios and watch OS. 
 
