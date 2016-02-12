@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="109" width="375" height="35"/>
                                 <color key="backgroundColor" red="0.93110795449999995" green="0.40070218369999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="SnJ-wQ-X0d"/>
+                                    <constraint firstAttribute="height" constant="35" id="3qG-RV-hVl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="624" width="375" height="43"/>
                                 <color key="backgroundColor" red="0.98823535439999999" green="0.10588236149999999" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="Ndq-3Y-nUc"/>
+                                    <constraint firstAttribute="height" constant="43" id="PEn-iQ-ne9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sleep/Disconnect">
@@ -48,18 +48,30 @@
                                     <action selector="sleepButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jzy-TT-NOo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Move your wrist with the phone to control the sphero/bb8" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvy-WK-IPY">
+                                <rect key="frame" x="-2" y="293" width="377" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="8Mt-z2-GpY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xrb-fO-WDX" firstAttribute="trailing" secondItem="Ngy-Ec-DHZ" secondAttribute="trailing" id="8N8-YY-Vmr"/>
-                            <constraint firstItem="xrb-fO-WDX" firstAttribute="top" secondItem="Ngy-Ec-DHZ" secondAttribute="bottom" constant="22" id="999-u2-aIf"/>
-                            <constraint firstItem="xrb-fO-WDX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CBN-c5-N4p"/>
-                            <constraint firstAttribute="trailing" secondItem="w8M-N4-lmd" secondAttribute="trailing" id="Exk-fa-il3"/>
-                            <constraint firstItem="xrb-fO-WDX" firstAttribute="trailing" secondItem="w8M-N4-lmd" secondAttribute="trailing" id="Iww-Fr-3FP"/>
-                            <constraint firstItem="xrb-fO-WDX" firstAttribute="leading" secondItem="w8M-N4-lmd" secondAttribute="leading" id="ZHc-Io-g9I"/>
-                            <constraint firstItem="Ngy-Ec-DHZ" firstAttribute="top" secondItem="RlE-Na-LUC" secondAttribute="bottom" constant="12" id="cVd-s9-bJL"/>
-                            <constraint firstItem="xrb-fO-WDX" firstAttribute="leading" secondItem="Ngy-Ec-DHZ" secondAttribute="leading" id="dHD-a1-RaY"/>
-                            <constraint firstItem="w8M-N4-lmd" firstAttribute="bottom" secondItem="Nl2-iL-KdC" secondAttribute="top" id="hOg-21-wpm"/>
+                            <constraint firstItem="Ngy-Ec-DHZ" firstAttribute="leading" secondItem="xrb-fO-WDX" secondAttribute="leading" id="0dM-Jk-RSi"/>
+                            <constraint firstItem="w8M-N4-lmd" firstAttribute="trailing" secondItem="Uvy-WK-IPY" secondAttribute="trailing" id="0n8-Az-zed"/>
+                            <constraint firstItem="Uvy-WK-IPY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0vl-kF-Ojw"/>
+                            <constraint firstItem="xrb-fO-WDX" firstAttribute="top" secondItem="Ngy-Ec-DHZ" secondAttribute="bottom" constant="22" id="3BJ-Ux-ZNm"/>
+                            <constraint firstItem="w8M-N4-lmd" firstAttribute="bottom" secondItem="Nl2-iL-KdC" secondAttribute="top" id="Bt8-V9-qdR"/>
+                            <constraint firstItem="xrb-fO-WDX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Gon-Cr-eEP"/>
+                            <constraint firstItem="xrb-fO-WDX" firstAttribute="trailing" secondItem="Ngy-Ec-DHZ" secondAttribute="trailing" id="LV3-EI-yCA"/>
+                            <constraint firstItem="xrb-fO-WDX" firstAttribute="trailing" secondItem="Uvy-WK-IPY" secondAttribute="trailing" id="RN1-HU-vwY"/>
+                            <constraint firstAttribute="trailing" secondItem="w8M-N4-lmd" secondAttribute="trailing" id="XdH-TC-hx2"/>
+                            <constraint firstItem="xrb-fO-WDX" firstAttribute="leading" secondItem="w8M-N4-lmd" secondAttribute="leading" id="bL9-kL-PEf"/>
+                            <constraint firstItem="Uvy-WK-IPY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-18" id="cgt-Ad-jGf"/>
+                            <constraint firstItem="Ngy-Ec-DHZ" firstAttribute="top" secondItem="RlE-Na-LUC" secondAttribute="bottom" constant="12" id="zj2-Vm-VXO"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
