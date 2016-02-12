@@ -11,7 +11,7 @@ Working on a single computer with Atul Aneja, attached as a collaborator too.
 
 ## License
 
-    Copyright [1996] [Tarang Khanna & Atul Aneja]
+    Copyright [2016] [Tarang Khanna & Atul Aneja]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
