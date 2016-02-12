@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -9,26 +9,39 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BB8Notifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RlE-Na-LUC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nl2-iL-KdC"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bb_8" id="Bmz-el-QU4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="697"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xrb-fO-WDX">
-                                <rect key="frame" x="20" y="89" width="293.5" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrb-fO-WDX">
+                                <rect key="frame" x="0.0" y="109" width="375" height="35"/>
+                                <color key="backgroundColor" red="0.93110795449999995" green="0.40070218369999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="SnJ-wQ-X0d"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.93110795449999995" green="0.40070218369999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w8M-N4-lmd">
-                                <rect key="frame" x="20" y="149" width="102" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sleep">
-                                    <color key="titleColor" red="0.93110795449999995" green="0.40070218369999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bring the phone near the sphero/bb8 to connect" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngy-Ec-DHZ">
+                                <rect key="frame" x="0.0" y="32" width="375" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8M-N4-lmd">
+                                <rect key="frame" x="0.0" y="624" width="375" height="43"/>
+                                <color key="backgroundColor" red="0.98823535439999999" green="0.10588236149999999" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Ndq-3Y-nUc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Sleep/Disconnect">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -37,18 +50,27 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xrb-fO-WDX" firstAttribute="trailing" secondItem="Ngy-Ec-DHZ" secondAttribute="trailing" id="8N8-YY-Vmr"/>
+                            <constraint firstItem="xrb-fO-WDX" firstAttribute="top" secondItem="Ngy-Ec-DHZ" secondAttribute="bottom" constant="22" id="999-u2-aIf"/>
+                            <constraint firstItem="xrb-fO-WDX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CBN-c5-N4p"/>
+                            <constraint firstAttribute="trailing" secondItem="w8M-N4-lmd" secondAttribute="trailing" id="Exk-fa-il3"/>
+                            <constraint firstItem="xrb-fO-WDX" firstAttribute="trailing" secondItem="w8M-N4-lmd" secondAttribute="trailing" id="Iww-Fr-3FP"/>
+                            <constraint firstItem="xrb-fO-WDX" firstAttribute="leading" secondItem="w8M-N4-lmd" secondAttribute="leading" id="ZHc-Io-g9I"/>
+                            <constraint firstItem="Ngy-Ec-DHZ" firstAttribute="top" secondItem="RlE-Na-LUC" secondAttribute="bottom" constant="12" id="cVd-s9-bJL"/>
+                            <constraint firstItem="xrb-fO-WDX" firstAttribute="leading" secondItem="Ngy-Ec-DHZ" secondAttribute="leading" id="dHD-a1-RaY"/>
+                            <constraint firstItem="w8M-N4-lmd" firstAttribute="bottom" secondItem="Nl2-iL-KdC" secondAttribute="top" id="hOg-21-wpm"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="buttonOutlet" destination="w8M-N4-lmd" id="H1S-G4-MiK"/>
                         <outlet property="connectionLabel" destination="xrb-fO-WDX" id="QMi-P5-qz8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="172.5" y="376.5"/>
+            <point key="canvasLocation" x="322.5" y="397.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="bb_8" width="610" height="539"/>
-    </resources>
 </document>

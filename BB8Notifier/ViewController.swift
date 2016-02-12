@@ -20,8 +20,13 @@ class ViewController: UIViewController , WCSessionDelegate {
     
     @IBOutlet var connectionLabel: UILabel!
     
+    
+    @IBOutlet weak var buttonOutlet: UIButton!
+    
     override func viewDidLoad() {
         motionManager.gyroUpdateInterval = 0.6
+        buttonOutlet.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Center
+        
         let handler:CMGyroHandler = {(data: CMGyroData?, error: NSError?) -> Void in
             print("x: \(data!.rotationRate.x)")
             print("y: \(data!.rotationRate.y)")
